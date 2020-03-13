@@ -7,29 +7,13 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; COPYRIGHT(c) 2017 STMicroelectronics</center></h2>
+  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.</center></h2>
   *
-  * Redistribution and use in source and binary forms, with or without modification,
-  * are permitted provided that the following conditions are met:
-  *   1. Redistributions of source code must retain the above copyright notice,
-  *      this list of conditions and the following disclaimer.
-  *   2. Redistributions in binary form must reproduce the above copyright notice,
-  *      this list of conditions and the following disclaimer in the documentation
-  *      and/or other materials provided with the distribution.
-  *   3. Neither the name of STMicroelectronics nor the names of its contributors
-  *      may be used to endorse or promote products derived from this software
-  *      without specific prior written permission.
-  *
-  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
   *
   ******************************************************************************
   */
@@ -274,7 +258,7 @@ typedef enum
 #define COMn                                    1
 
 /**
- * @brief Definition for COM port1, connected to USART1
+ * @brief Definition for COM port1, connected to LPUART1
  */
 #define EVAL_COM1                               LPUART1
 #define EVAL_COM1_CLK_ENABLE()                  __HAL_RCC_LPUART1_CLK_ENABLE()
@@ -532,16 +516,12 @@ typedef enum
 #define LCD_DSI_BL_CTRL_GPIO_CLK_DISABLE()   __HAL_RCC_GPIOB_CLK_DISABLE()
 
 /* DSI TS INT pin */
-#define TS_DSI_INT_PIN                       GPIO_PIN_3
-#define TS_DSI_INT_GPIO_PORT                 GPIOI
-#define TS_DSI_INT_GPIO_CLK_ENABLE()         __HAL_RCC_GPIOI_CLK_ENABLE()
-#define TS_DSI_INT_GPIO_CLK_DISABLE()        __HAL_RCC_GPIOI_CLK_DISABLE()
-#define TS_DSI_INT_EXTI_IRQn                 EXTI3_IRQn
+#define TS_DSI_INT_PIN                       GPIO_PIN_2
+#define TS_DSI_INT_GPIO_PORT                 GPIOC
+#define TS_DSI_INT_GPIO_CLK_ENABLE()         __HAL_RCC_GPIOC_CLK_ENABLE()
+#define TS_DSI_INT_GPIO_CLK_DISABLE()        __HAL_RCC_GPIOC_CLK_DISABLE()
+#define TS_DSI_INT_EXTI_IRQn                 EXTI2_IRQn
 
-#define TS_DSI_RES_PIN                       GPIO_PIN_13
-#define TS_DSI_RES_GPIO_PORT                 GPIOG
-#define TS_DSI_RES_GPIO_CLK_ENABLE()         __HAL_RCC_GPIOG_CLK_ENABLE()
-#define TS_DSI_RES_GPIO_CLK_DISABLE()        __HAL_RCC_GPIOG_CLK_DISABLE()
 
 /** MB1315 RGB **/
 
